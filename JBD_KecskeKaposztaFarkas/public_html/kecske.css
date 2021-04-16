@@ -1,10 +1,52 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2021. ápr. 16., 23:01:12
-    Author     : Dóriii
-*/
+@charset "utf-8";
 
+main{
+  display:grid;
+  justify-content: center;
+grid-template-areas:
+    'h h h h'
+    'asb a a asj'
+    'asb a a asj'
+    'f f f f';
+    
+    ;
+    font-weight: 20px;
+    margin: auto;
+    max-width: 900px;
+    
+    
+}
+header {
+    border: solid 1px gray;
+    display: grid;
+    grid-area: h;
+}
+
+#bal{
+   border: solid 1px gray;
+    display: grid;
+    grid-area: asb;
+ 
+   
+}
+
+article{
+    border: solid 1px gray;
+    display: grid;
+    grid-area: a;
+    
+/*    background-color: blue;*/
+}
+
+footer{
+    
+    border: solid 1px gray;
+    display: grid;
+   grid-area: f; 
+}
+
+#jobb{
+    display:grid;
+    border: solid 1px gray;
+    grid-area: asj;
+}
