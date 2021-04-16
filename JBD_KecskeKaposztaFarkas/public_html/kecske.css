@@ -49,3 +49,11 @@ footer{
     border: solid 1px gray;
     grid-area: asj;
 }
+
+
+.kiemel
+{
+    border:solid 2px gray;
+    cursor: grab;
+    
+}
