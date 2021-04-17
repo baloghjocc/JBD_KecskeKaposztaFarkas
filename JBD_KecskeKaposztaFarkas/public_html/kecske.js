@@ -11,7 +11,7 @@ function init() {
     }, false);
     }
 
-    //5-6. feladat
+    //5 - 6. feladat
     for (var i = 0; i < $("img").length; i++){
         $("img")[i].addEventListener("mouseover",keretfel);
         $("img")[i].addEventListener("mouseout",keretle);
