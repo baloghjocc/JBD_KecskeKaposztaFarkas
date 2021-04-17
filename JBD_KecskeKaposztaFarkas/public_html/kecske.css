@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+*{
+    padding: 10px;
+}
 main{
   display:grid;
   justify-content: center;
@@ -10,8 +12,9 @@ main{
     'f f f f';
     font-size: 20px;
     margin: auto;
-    max-width: 900px;
+    
     text-align: center;
+    border: solid 1px gray;
     
     
 }
@@ -19,12 +22,14 @@ header {
     border: solid 1px gray;
     display: grid;
     grid-area: h;
+   
 }
 
 #bal{
    border: solid 1px gray;
     display: grid;
     grid-area: asb;
+
  
    
 }
@@ -33,6 +38,10 @@ article{
     border: solid 1px gray;
     display: grid;
     grid-area: a;
+   background-color: lightblue;
+   background-image: url('kepek/csonak.png');
+   background-repeat: no-repeat;
+   float: center;
     
 /*    background-color: blue;*/
 }
@@ -57,3 +66,14 @@ footer{
     cursor: grab;
     
 }
+img{
+    width: 150px;
+  height: 150px;
+  float: left ;
+  
+  
+  
+  
+}
+
+
