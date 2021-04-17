@@ -1,5 +1,9 @@
 window.addEventListener("load",init);
 
+var kecskeOn = 0;
+var kaposztaOn = 0;
+var farkasOn = 0;
+
 function init() {
     var tomb = new Array();
 
@@ -18,6 +22,19 @@ function init() {
         x.setAttribute("width", y.width);
         x.setAttribute("height", y.height);
         document.getElementById("csonak").appendChild(x);
+        
+        if ( this.alt === "kecske") {
+            kecskeOn = 1;
+        }
+        else if ( this.alt === "kaposzta"){
+            kaposztaOn = 1;
+        }
+        else {
+            farkasOn = 1;
+        }
+        if ((kecskeOn === 1) && ((kaposztaOn === 1) || (farkasOn === 1))) {
+            alert("Rossz volt a választás!");
+        }
     }, false);
     }
 
