@@ -69,11 +69,10 @@ footer{
 img{
     width: 150px;
   height: 150px;
-  float: left ;
-  
-  
-  
-  
+  float: left ;  
+}
+footer p {
+background-color: lightblue;   
 }
 
 
