@@ -8,6 +8,16 @@ function init() {
         document.getElementsByTagName("IMG")[i].addEventListener("click", function(){
         tomb.push(this.src);
         console.log(tomb);
+        
+        // 7. feladat
+        var y = this;
+        this.style.display = "none";
+        
+        var x = document.createElement("IMG");
+        x.setAttribute("src", y.src);
+        x.setAttribute("width", y.width);
+        x.setAttribute("height", y.height);
+        document.getElementById("csonak").appendChild(x);
     }, false);
     }
 
